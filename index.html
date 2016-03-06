@@ -15,8 +15,12 @@
 <script>
     $(document).ready(function(){
         var opt={
-            opacity:0.2,
-            zIndex:10,
+            //These are default options
+            loaderId:"my-custom-loader",
+            src:"./spinner.gif",
+            opacity:0.5,
+            backgroundColor:"#000000",
+            zIndex:99
         }
         window.loader=new Loader().init(opt);
         $('#wait').on("click",function(){
